@@ -1,0 +1,19 @@
+{
+    "name": "symfony/widget",
+    "description": "Widget integration",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mikhail Chistilin",
+            "email": "mikhail.chistilin@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "symfony\\widget\\": "src/"
+        }
+    },
+    "require": {}
+}
