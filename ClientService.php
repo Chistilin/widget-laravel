@@ -1,23 +1,16 @@
 <?php
 
-namespace App\Services\Widget;
+namespace Widgetdeals\Widget;
 
-/**
- * @property string  $secretKey
- * @property string  $token
- * @property integer $responseCode
- * @property string  $url
- * @property string  $code
- * @property string  $userId
- * @property string  $userIp
- *  */
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class ClientService
+class ClientService extends AbstractController
 {
+
     /**
-     * @property string $secretKey
+     * @var mixed
      */
-    public $secretKey = 'caAN14j7tRo-Z1Qq';
+    public $secretKey;
 
     /**
      * @property string $token
@@ -57,6 +50,9 @@ class ClientService
      */
     private $widgetUrl = 'http://widget.deals';
 
+    public function __construct(){
+        $this->secretKey = $_ENV['WIDGET_SECRET'];
+    }
 
     public function getToken()
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\Widget;
+namespace Widgetdeals\Widget;
 
 use App\Component\Discount\Model\Discount;
 use App\Services\Widget\ClientService;

@@ -1,7 +1,6 @@
 <?php
 
-
-namespace App\Services\Widget;
+namespace Widgetdeals\Widget;
 
 use App\Services\Widget\ClientService;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
