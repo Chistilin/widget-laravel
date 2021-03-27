@@ -1,6 +1,6 @@
 <?php
 
-namespace Symfony\Widgetdeals\Widget;
+namespace Widgetdeals\Widget;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
