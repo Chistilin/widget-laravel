@@ -1,6 +1,6 @@
 <?php
 
-namespace Widgetdeals\Widget;
+namespace Symfony\Widgetdeals\Widget;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
@@ -50,8 +50,9 @@ class ClientService extends AbstractController
      */
     private $widgetUrl = 'http://widget.deals';
 
-    public function __construct(){
-        $this->secretKey = $_ENV['WIDGET_SECRET'];
+
+    public function __construct(LowercasingEnvVarProcessor $LowercasingEnvVarProcessor){
+        $this->secretKey = $LowercasingEnvVarProcessor->getEnv('WIDGET_SECRET');
     }
 
     public function getToken()

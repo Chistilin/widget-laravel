@@ -11,9 +11,7 @@
     ],
     "minimum-stability": "dev",
     "autoload": {
-        "psr-4": {
-            "symfony\\widget\\": "src/"
-        }
+        "psr-4": { "Widgetdeals\\Widget\\": "" }
     },
     "require": {}
 }
