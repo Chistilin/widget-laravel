@@ -2,6 +2,7 @@
     "name": "widgetdeals/widget",
     "description": "Widget integration in symfony",
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Mikhail Chistilin",
