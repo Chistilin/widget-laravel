@@ -1,0 +1,17 @@
+{
+    "name": "widgetdeals/widget",
+    "description": "Widget integration in symfony",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Mikhail Chistilin",
+            "email": "mikhail.chistilin@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Widgetdeals\\Widget\\": ""
+        }
+    },
+    "require": {}
+}
