@@ -1,8 +1,8 @@
 <?php
 
-namespace Widgetdeals\Widget;
+namespace Widget;
 
-use App\Services\Widget\ClientService;
+use Widget\ClientService;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 
 class DisplayService

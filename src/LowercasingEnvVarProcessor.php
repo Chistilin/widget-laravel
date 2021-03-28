@@ -1,5 +1,5 @@
 <?php
-namespace Widgetdeals\Widget;
+namespace Widget;
 
 use Symfony\Component\DependencyInjection\EnvVarProcessorInterface;
 

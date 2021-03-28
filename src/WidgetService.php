@@ -1,9 +1,9 @@
 <?php
 
-namespace Widgetdeals\Widget;
+namespace Widget;
 
 use App\Component\Discount\Model\Discount;
-use App\Services\Widget\ClientService;
+use Widget\ClientService;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\ORMException;
 use Symfony\Component\HttpFoundation\JsonResponse;

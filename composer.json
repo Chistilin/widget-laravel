@@ -11,7 +11,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Widgetdeals\\Widget\\": ""
+            "Widget\\": "src/"
         }
     },
     "require": {}
