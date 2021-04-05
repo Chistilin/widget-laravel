@@ -2,15 +2,19 @@
 
 namespace Widget;
 
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+/**
+ * @author AlexPetrov <alexmaoczedun@gmail.com>
+ * @property string  $secretKey
+ * @property string  $token
+ * @property integer $responseCode
+ * @property string  $url
+ * @property string  $code
+ * @property string  $userId
+ * @property string  $userIp
+ *  */
 
-class ClientService extends AbstractController
+class ClientService
 {
-
-    /**
-     * @var mixed
-     */
-    public $secretKey;
 
     /**
      * @property string $token
@@ -50,10 +54,6 @@ class ClientService extends AbstractController
      */
     private $widgetUrl = 'http://widget.deals';
 
-
-    public function __construct(LowercasingEnvVarProcessor $LowercasingEnvVarProcessor){
-        $this->secretKey = $LowercasingEnvVarProcessor->getEnv('WIDGET_SECRET');
-    }
 
     public function getToken()
     {

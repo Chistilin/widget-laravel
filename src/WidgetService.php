@@ -2,36 +2,13 @@
 
 namespace Widget;
 
-use App\Component\Discount\Model\Discount;
 use Widget\ClientService;
-use Doctrine\ORM\EntityManagerInterface;
-use Doctrine\ORM\ORMException;
-use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpFoundation\Session\SessionInterface;
-use Symfony\Component\Routing\Annotation\Route;
-
+use Illuminate\Http\JsonResponse;
+use Carbon\Carbon;
+use Illuminate\Http\Response;
 
 class WidgetService
 {
-    private $session;
-
-    /**
-     * @var EntityManagerInterface $em
-     */
-    private $em;
-
-    public function __construct(SessionInterface $session, EntityManagerInterface $em)
-    {
-        $this->session = $session;
-        $this->em = $em;
-    }
-
-    /**
-     * @param \App\Services\Widget\ClientService $widgetDeals
-     * @param string $code
-     * @return JsonResponse
-     */
     public function get(
         ClientService $widgetDeals,
         string $code
