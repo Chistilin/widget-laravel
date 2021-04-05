@@ -11,7 +11,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Widget\\": "src/ClientService.php\nDisplayService.php\nWidgetService.php"
+            "Widget\\": "src/"
         }
     },
     "require": {}
