@@ -51,20 +51,6 @@ class WidgetService
             );
         }
 
-        $coupon = $this->em->getRepository(Discount::class)
-            ->findOneBy([
-                'code' => $code
-            ]);
-
-        if (empty($coupon)) {
-            $discount = new Discount();
-            $discount->setCode($result['code']);
-            $discount->setName('widget'.$result['code']);
-            $discount->setDiscount($result['discount']);
-            $this->em->persist($discount);
-            $this->em->flush();
-        }
-
         return new JsonResponse(
                 $result,
                 $widgetDeals->getResponseCode()
