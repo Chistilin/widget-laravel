@@ -57,6 +57,7 @@ class ClientService
 
     public function getToken()
     {
+        $this->secretKey = env('SECRET_KEY', false);
         $secretKey = $this->secretKey;
 
         $this->url = sprintf('%s/api/customer/%s', $this->widgetUrl, $secretKey);
